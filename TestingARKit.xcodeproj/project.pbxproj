@@ -7,18 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E99C823F2AC9E89400F019FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C823E2AC9E89400F019FF /* AppDelegate.swift */; };
 		E99C82412AC9E89400F019FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C82402AC9E89400F019FF /* ContentView.swift */; };
-		E99C82432AC9E89400F019FF /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = E99C82422AC9E89400F019FF /* Experience.rcproject */; };
 		E99C82452AC9E89500F019FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99C82442AC9E89500F019FF /* Assets.xcassets */; };
 		E99C82482AC9E89500F019FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99C82472AC9E89500F019FF /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E99C823B2AC9E89400F019FF /* TestingARKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingARKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E99C823E2AC9E89400F019FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E99C82402AC9E89400F019FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E99C82422AC9E89400F019FF /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		E99C82442AC9E89500F019FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E99C82472AC9E89500F019FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,9 +49,7 @@
 		E99C823D2AC9E89400F019FF /* TestingARKit */ = {
 			isa = PBXGroup;
 			children = (
-				E99C823E2AC9E89400F019FF /* AppDelegate.swift */,
 				E99C82402AC9E89400F019FF /* ContentView.swift */,
-				E99C82422AC9E89400F019FF /* Experience.rcproject */,
 				E99C82442AC9E89500F019FF /* Assets.xcassets */,
 				E99C82462AC9E89500F019FF /* Preview Content */,
 			);
@@ -141,8 +135,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E99C82412AC9E89400F019FF /* ContentView.swift in Sources */,
-				E99C823F2AC9E89400F019FF /* AppDelegate.swift in Sources */,
-				E99C82432AC9E89400F019FF /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
