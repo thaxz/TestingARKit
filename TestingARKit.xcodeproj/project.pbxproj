@@ -11,6 +11,8 @@
 		E99C82452AC9E89500F019FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99C82442AC9E89500F019FF /* Assets.xcassets */; };
 		E99C82482AC9E89500F019FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99C82472AC9E89500F019FF /* Preview Assets.xcassets */; };
 		E99C82762ACA0CC800F019FF /* TestingARKitAPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C82752ACA0CC800F019FF /* TestingARKitAPP.swift */; };
+		E99C827A2ACA107300F019FF /* pancakes.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E99C82792ACA107300F019FF /* pancakes.usdz */; };
+		E99C827D2ACA10E100F019FF /* PancakeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C827C2ACA10E100F019FF /* PancakeEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		E99C82472AC9E89500F019FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E99C82752ACA0CC800F019FF /* TestingARKitAPP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingARKitAPP.swift; sourceTree = "<group>"; };
 		E99C82772ACA0F0C00F019FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E99C82792ACA107300F019FF /* pancakes.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pancakes.usdz; sourceTree = "<group>"; };
+		E99C827C2ACA10E100F019FF /* PancakeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PancakeEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 		E99C823D2AC9E89400F019FF /* TestingARKit */ = {
 			isa = PBXGroup;
 			children = (
+				E99C827B2ACA10C700F019FF /* Entity */,
+				E99C82782ACA105900F019FF /* Resources */,
 				E99C82772ACA0F0C00F019FF /* Info.plist */,
 				E99C82402AC9E89400F019FF /* ContentView.swift */,
 				E99C82752ACA0CC800F019FF /* TestingARKitAPP.swift */,
@@ -67,6 +73,22 @@
 				E99C82472AC9E89500F019FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E99C82782ACA105900F019FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E99C82792ACA107300F019FF /* pancakes.usdz */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E99C827B2ACA10C700F019FF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E99C827C2ACA10E100F019FF /* PancakeEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99C827A2ACA107300F019FF /* pancakes.usdz in Resources */,
 				E99C82482AC9E89500F019FF /* Preview Assets.xcassets in Resources */,
 				E99C82452AC9E89500F019FF /* Assets.xcassets in Resources */,
 			);
@@ -139,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99C827D2ACA10E100F019FF /* PancakeEntity.swift in Sources */,
 				E99C82762ACA0CC800F019FF /* TestingARKitAPP.swift in Sources */,
 				E99C82412AC9E89400F019FF /* ContentView.swift in Sources */,
 			);
@@ -273,7 +297,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestingARKit/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to use ARView";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -305,7 +329,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestingARKit/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to use ARView";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
