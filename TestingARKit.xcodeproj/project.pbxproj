@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90FD43E2ACAEFB9000624E6 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90FD43D2ACAEFB9000624E6 /* ResourceLoader.swift */; };
 		E99C82412AC9E89400F019FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C82402AC9E89400F019FF /* ContentView.swift */; };
 		E99C82452AC9E89500F019FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99C82442AC9E89500F019FF /* Assets.xcassets */; };
 		E99C82482AC9E89500F019FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99C82472AC9E89500F019FF /* Preview Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E90FD43D2ACAEFB9000624E6 /* ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
 		E99C823B2AC9E89400F019FF /* TestingARKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingARKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99C82402AC9E89400F019FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E99C82442AC9E89500F019FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E90FD43C2ACAEFA8000624E6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E90FD43D2ACAEFB9000624E6 /* ResourceLoader.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		E99C82322AC9E89300F019FF = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		E99C823D2AC9E89400F019FF /* TestingARKit */ = {
 			isa = PBXGroup;
 			children = (
+				E90FD43C2ACAEFA8000624E6 /* Manager */,
 				E99C827B2ACA10C700F019FF /* Entity */,
 				E99C82782ACA105900F019FF /* Resources */,
 				E99C82772ACA0F0C00F019FF /* Info.plist */,
@@ -164,6 +175,7 @@
 			files = (
 				E99C827D2ACA10E100F019FF /* PancakeEntity.swift in Sources */,
 				E99C82762ACA0CC800F019FF /* TestingARKitAPP.swift in Sources */,
+				E90FD43E2ACAEFB9000624E6 /* ResourceLoader.swift in Sources */,
 				E99C82412AC9E89400F019FF /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
