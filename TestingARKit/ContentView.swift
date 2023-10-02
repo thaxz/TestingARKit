@@ -9,8 +9,22 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
+    @EnvironmentObject var viewModel: ViewModel
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        ZStack {
+            // Fullscreen camera ARView
+            ARViewContainer().edgesIgnoringSafeArea(.all)
+            // Loading screen
+            ZStack {
+                Color.white
+                Text("Loading resources...")
+                    .foregroundColor(Color.black)
+            }
+            .opacity(viewModel.assetsLoaded ? 0 : 1)
+            .ignoresSafeArea()
+            .animation(Animation.default.speed(1),
+                       value: viewModel.assetsLoaded)
+        }
     }
 }
 
@@ -27,8 +41,13 @@ struct ARViewContainer: UIViewRepresentable {
 }
 
 struct ContentView_Previews : PreviewProvider {
+    @StateObject static var viewModel: ViewModel = {
+        return ViewModel()
+    }()
+    
     static var previews: some View {
         ContentView()
+            .environmentObject(viewModel)
     }
 }
 
