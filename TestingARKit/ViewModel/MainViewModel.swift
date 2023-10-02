@@ -34,9 +34,7 @@ final class ViewModel: NSObject, ObservableObject {
     }
     
     // Add objects to the scene
-    func addPancake(anchor: ARAnchor,
-                   at worldTransform: simd_float4x4,
-                   in view: ARView) {
+    func addPancake(anchor: ARAnchor, at worldTransform: simd_float4x4, in view: ARView) {
            // Create a new cup to place at the tap location
            let pancake: Entity
            do {
@@ -67,6 +65,14 @@ final class ViewModel: NSObject, ObservableObject {
            // Add the cup to the existing anchor
            anchorEntity.addChild(pancake)
        }
+    
+    // Configure scene
+    func configureSession(forView arView: ARView) {
+        let config = ARWorldTrackingConfiguration()
+        config.planeDetection = [.horizontal]
+        arView.session.run(config)
+        arView.session.delegate = self
+    }
     
     // MARK: - Private methods
 
