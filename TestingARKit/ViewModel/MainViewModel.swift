@@ -92,3 +92,18 @@ final class ViewModel: NSObject, ObservableObject {
         }
     }
 }
+
+// MARK: - ARSessionDelegate
+
+extension ViewModel: ARSessionDelegate {
+    func session(_ session: ARSession, didRemove anchors: [ARAnchor]) {
+        anchors.forEach { anchor in
+            guard let anchorEntity = self.anchors[anchor.identifier] else {
+                return
+            }
+            // Lost an anchor, remove the AnchorEntity from the Scene
+            anchorEntity.scene?.removeAnchor(anchorEntity)
+            self.anchors.removeValue(forKey: anchor.identifier)
+        }
+    }
+}
