@@ -16,6 +16,7 @@ class ResourceLoader {
     private var loadCancellable: AnyCancellable?
     private var pancakeEntity: PancakeEntity?
     
+    // LOAD
     func loadResources(completion: @escaping LoadCompletion) -> AnyCancellable? {
         guard let pancakeEntity else {
             loadCancellable = PancakeEntity.loadAsync.sink { result in
@@ -34,6 +35,14 @@ class ResourceLoader {
         }
         completion(.success(pancakeEntity))
         return loadCancellable
+    }
+    
+    // CREATE
+    func createPancake() throws -> Entity {
+        guard let pancake = pancakeEntity?.model else {
+            throw ResourceLoaderError.resourceNotLoaded
+        }
+        return pancake.clone(recursive: true)
     }
 }
 
